@@ -89,52 +89,7 @@
             border-left: 4px solid var(--accent-blue);
         }
 
-        /* Header */
-        header {
-            height: 60px;
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 25px;
-            background-color: var(--bg-sidebar);
-        }
-
-        .search-bar {
-            display: flex;
-            align-items: center;
-            background-color: var(--bg-main);
-            padding: 8px 15px;
-            border-radius: 6px;
-            width: 300px;
-            border: 1px solid var(--border-color);
-        }
-
-        .search-bar input {
-            background: transparent;
-            border: none;
-            color: var(--text-primary);
-            margin-left: 10px;
-            outline: none;
-            width: 100%;
-        }
-
-        .user-profile {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .user-avatar {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            background-color: var(--accent-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
+        /* Header eliminado */
 
         /* Main Content */
         main {
@@ -313,32 +268,11 @@
 
     <div style="flex-grow: 1; display: flex; flex-direction: column;">
         
-        <header>
-            <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass" style="color: var(--text-secondary);"></i>
-                <input type="text" placeholder="Buscar herramientas o servicios...">
-            </div>
-            <div class="user-profile">
-                <i class="fa-regular fa-bell"></i>
-                <div class="user-avatar">AD</div>
-            </div>
-        </header>
-
         <main>
             <h2 class="section-title">Herramientas Clave</h2>
             
             <div class="grid-tools">
-                <a href="https://tu-zabbix.com" target="_blank" class="card">
-                    <div class="card-icon" style="background-color: rgba(59, 130, 246, 0.2); color: var(--accent-blue);">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Monitoreo de Red</h3>
-                        <p>Zabbix / PRTG</p>
-                    </div>
-                </a>
-
-                <a href="https://tu-glpi-o-jira.com" target="_blank" class="card">
+                <a href="https://incidentesdermavan-2a5b3.web.app/" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(20, 184, 166, 0.2); color: var(--accent-teal);">
                         <i class="fa-solid fa-headset"></i>
                     </div>
@@ -358,27 +292,27 @@
                     </div>
                 </a>
 
-                <a href="https://tu-active-directory.com" target="_blank" class="card">
+                <a href="https://cpanel.dermavan.mx/" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(249, 115, 22, 0.2); color: var(--accent-orange);">
                         <i class="fa-solid fa-user-gear"></i>
                     </div>
                     <div class="card-info">
-                        <h3>Gestión de Accesos</h3>
-                        <p>Active Directory / Okta</p>
+                        <h3>CPANEL</h3>
+                        <p>Gestión Correos</p>
                     </div>
                 </a>
 
-                <a href="https://tu-veeam.com" target="_blank" class="card">
+                <a href="https://datastudio.google.com/u/0/reporting/7968754d-7813-4e17-bb49-f0927fcb4a27/page/C4tsD" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(139, 92, 246, 0.2); color: var(--accent-purple);">
                         <i class="fa-solid fa-database"></i>
                     </div>
                     <div class="card-info">
                         <h3>Backups</h3>
-                        <p>Veeam / Respaldos</p>
+                        <p>Laptos</p>
                     </div>
                 </a>
 
-                <a href="https://tu-inventario.com" target="_blank" class="card">
+                <a href="https://datastudio.google.com/u/0/reporting/699b2ec3-0afb-473d-88be-65c613bc4051/page/cNt9C" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(34, 197, 94, 0.2); color: var(--accent-green);">
                         <i class="fa-solid fa-boxes-stacked"></i>
                     </div>
@@ -388,7 +322,7 @@
                     </div>
                 </a>
 
-                <a href="https://tu-sap.com" target="_blank" class="card">
+                <a href="https://www.bluehost.com/my-account/login" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(99, 102, 241, 0.2); color: var(--accent-indigo);">
                         <i class="fa-solid fa-server"></i>
                     </div>
@@ -398,7 +332,7 @@
                     </div>
                 </a>
 
-                <a href="https://tu-moodle.com" target="_blank" class="card">
+                <a href="https://www.bluehost.com/my-account/login" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(244, 63, 94, 0.2); color: var(--accent-rose);">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
@@ -408,8 +342,7 @@
                     </div>
                 </a>
 
-                <!-- NUEVO: Ipads/Laptops -->
-                <a href="https://tu-inventario-dispositivos.com" target="_blank" class="card">
+                <a href="https://datastudio.google.com/u/0/reporting/699b2ec3-0afb-473d-88be-65c613bc4051/page/cNt9C" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(132, 204, 22, 0.2); color: var(--accent-lime);">
                         <i class="fa-solid fa-tablet-screen-button"></i>
                     </div>
@@ -419,7 +352,6 @@
                     </div>
                 </a>
 
-                <!-- NUEVO: Licencias -->
                 <a href="https://tu-gestion-licencias.com" target="_blank" class="card">
                     <div class="card-icon" style="background-color: rgba(14, 165, 233, 0.2); color: var(--accent-sky);">
                         <i class="fa-solid fa-key"></i>
@@ -427,6 +359,17 @@
                     <div class="card-info">
                         <h3>Licencias</h3>
                         <p>Gestión de Licencias de Software</p>
+                    </div>
+                </a>
+
+                <!-- Instant On - Monitoreo -->
+                <a href="https://portal.instant-on.hpe.com/login" target="_blank" class="card">
+                    <div class="card-icon" style="background-color: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Instant On - Monitoreo</h3>
+                        <p>Redes WiFi / Switches</p>
                     </div>
                 </a>
             </div>
@@ -446,6 +389,7 @@
                         <li><a href="#" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Servidores Moodle</a></li>
                         <li><a href="#" target="_blank"><i class="fa-solid fa-tablet-screen-button"></i> Ipads / Laptops</a></li>
                         <li><a href="#" target="_blank"><i class="fa-solid fa-key"></i> Gestión de Licencias</a></li>
+                        <li><a href="https://portal.instant-on.hpe.com/login" target="_blank"><i class="fa-solid fa-wifi"></i> Instant On - Monitoreo</a></li>
                     </ul>
                 </div>
 
@@ -521,6 +465,13 @@
                             <span class="status-icon"><i class="fa-solid fa-key" style="color: var(--accent-sky);"></i></span>
                             <span class="status-label">Licencias</span>
                             <span class="status-badge status-sky">Activo</span>
+                        </div>
+
+                        <!-- Instant On - Monitoreo -->
+                        <div class="status-item">
+                            <span class="status-icon"><i class="fa-solid fa-wifi" style="color: var(--accent-cyan);"></i></span>
+                            <span class="status-label">Instant On - Monitoreo</span>
+                            <span class="status-badge status-cyan">Conectado</span>
                         </div>
                     </div>
 
