@@ -212,26 +212,19 @@
             margin-left: 10px;
         }
 
-        .status-badge {
-            padding: 4px 8px;
-            border-radius: 4px;
+        .status-item .status-link {
+            text-decoration: none;
             font-size: 0.75rem;
             font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 4px;
+            transition: background-color 0.2s, opacity 0.2s;
             white-space: nowrap;
         }
 
-        .status-ok { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
-        .status-warn { background: rgba(249, 115, 22, 0.2); color: var(--accent-orange); }
-        .status-info { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
-        .status-purple { background: rgba(139, 92, 246, 0.2); color: var(--accent-purple); }
-        .status-pink { background: rgba(236, 72, 153, 0.2); color: var(--accent-pink); }
-        .status-cyan { background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan); }
-        .status-yellow { background: rgba(234, 179, 8, 0.2); color: var(--accent-yellow); }
-        .status-teal { background: rgba(20, 184, 166, 0.2); color: var(--accent-teal); }
-        .status-indigo { background: rgba(99, 102, 241, 0.2); color: var(--accent-indigo); }
-        .status-rose { background: rgba(244, 63, 94, 0.2); color: var(--accent-rose); }
-        .status-lime { background: rgba(132, 204, 22, 0.2); color: var(--accent-lime); }
-        .status-sky { background: rgba(14, 165, 233, 0.2); color: var(--accent-sky); }
+        .status-item .status-link:hover {
+            opacity: 0.7;
+        }
 
         /* Footer del panel */
         .panel-footer {
@@ -259,7 +252,7 @@
         </div>
         <ul class="nav-menu">
             <li class="nav-item active"><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
-            <li class="nav-item"><a href="#"><i class="fa-solid fa-network-wired"></i> Infraestructura</a></li>
+            <li class="nav-item"><a href="https://datastudio.google.com/u/0/reporting/27c7fc4f-2a10-4158-ad2c-6109450aab77/page/p_wcuz4aqy4d"><i class="fa-solid fa-network-wired"></i> Infraestructura</a></li>
             <li class="nav-item"><a href="#"><i class="fa-solid fa-shield-halved"></i> Seguridad</a></li>
             <li class="nav-item"><a href="#"><i class="fa-solid fa-chart-line"></i> Monitoreo</a></li>
             <li class="nav-item"><a href="#"><i class="fa-solid fa-gear"></i> Configuración</a></li>
@@ -394,84 +387,84 @@
                 </div>
 
                 <div class="panel">
-                    <h2 class="section-title">Estado del Sistema</h2>
+                    <h2 class="section-title">Dashboards</h2>
                     
                     <div class="status-items-container">
                         <!-- Dashboard Correo Electrónico -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-users" style="color: var(--accent-blue);"></i></span>
-                            <span class="status-label">Dashboard Correo Electrónico</span>
-                            <span class="status-badge status-info">Activo</span>
+                            <span class="status-label">Correo Electrónico</span>
+                            <a href="https://datastudio.google.com/u/0/reporting/ad6b5923-0485-4232-94ad-1a45f69d0db9/page/USr9C" target="_blank" class="status-link" style="background-color: rgba(59, 130, 246, 0.2); color: var(--accent-blue);">Abrir</a>
                         </div>
                         
                         <!-- Dashboard Dominios -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-globe" style="color: var(--accent-yellow);"></i></span>
-                            <span class="status-label">Dashboard Dominios</span>
-                            <span class="status-badge status-yellow">Activo</span>
+                            <span class="status-label">Dominios</span>
+                            <a href="https://datastudio.google.com/u/0/reporting/b8876a39-153c-4397-bf7d-4ccd076e0f33/page/NL9cF" target="_blank" class="status-link" style="background-color: rgba(234, 179, 8, 0.2); color: var(--accent-yellow);">Abrir</a>
                         </div>
                         
                         <!-- Dashboard Inventarios Dispositivos -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-laptop" style="color: var(--accent-teal);"></i></span>
-                            <span class="status-label">Dashboard Inventarios Dispositivos</span>
-                            <span class="status-badge status-teal">Activo</span>
+                            <span class="status-label">Inventarios Dispositivos</span>
+                            <a href="https://datastudio.google.com/u/0/reporting/699b2ec3-0afb-473d-88be-65c613bc4051/page/cNt9C" target="_blank" class="status-link" style="background-color: rgba(20, 184, 166, 0.2); color: var(--accent-teal);">Abrir</a>
                         </div>
                         
                         <!-- Dashboard CRM -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-handshake" style="color: var(--accent-pink);"></i></span>
-                            <span class="status-label">Dashboard CRM</span>
-                            <span class="status-badge status-pink">Activo</span>
+                            <span class="status-label">CRM</span>
+                            <a href="https://datastudio.google.com/u/0/reporting/c8f9310e-3581-4056-a684-7cdfcacb6350/page/RLWeD?s=tNkzGFHoeD4" target="_blank" class="status-link" style="background-color: rgba(236, 72, 153, 0.2); color: var(--accent-pink);">Abrir</a>
                         </div>
                         
                         <!-- Dashboard Wifi -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-wifi" style="color: var(--accent-cyan);"></i></span>
-                            <span class="status-label">Dashboard Wifi</span>
-                            <span class="status-badge status-cyan">Activo</span>
+                            <span class="status-label">Wifi</span>
+                            <a href="https://datastudio.google.com/u/0/reporting/27c7fc4f-2a10-4158-ad2c-6109450aab77/page/UrKCD" target="_blank" class="status-link" style="background-color: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">Abrir</a>
                         </div>
                         
                         <!-- Dashboard Backups Laptops -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-hard-drive" style="color: var(--accent-purple);"></i></span>
-                            <span class="status-label">Dashboard Backups Laptops</span>
-                            <span class="status-badge status-purple">Activo</span>
+                            <span class="status-label">Backups Laptops</span>
+                            <a href="https://datastudio.google.com/u/0/reporting/7968754d-7813-4e17-bb49-f0927fcb4a27/page/C4tsD" target="_blank" class="status-link" style="background-color: rgba(139, 92, 246, 0.2); color: var(--accent-purple);">Abrir</a>
                         </div>
 
                         <!-- Servidores SAP -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-server" style="color: var(--accent-indigo);"></i></span>
                             <span class="status-label">Servidores SAP</span>
-                            <span class="status-badge status-indigo">Operativo</span>
+                            <a href="#" target="_blank" class="status-link" style="background-color: rgba(99, 102, 241, 0.2); color: var(--accent-indigo);">Abrir</a>
                         </div>
 
                         <!-- Servidores Moodle -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-rose);"></i></span>
                             <span class="status-label">Servidores Moodle</span>
-                            <span class="status-badge status-rose">Operativo</span>
+                            <a href="#" target="_blank" class="status-link" style="background-color: rgba(244, 63, 94, 0.2); color: var(--accent-rose);">Abrir</a>
                         </div>
 
                         <!-- Ipads/Laptops -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-tablet-screen-button" style="color: var(--accent-lime);"></i></span>
                             <span class="status-label">Ipads / Laptops</span>
-                            <span class="status-badge status-lime">Activo</span>
+                            <a href="https://datastudio.google.com/u/0/reporting/699b2ec3-0afb-473d-88be-65c613bc4051/page/cNt9C" target="_blank" class="status-link" style="background-color: rgba(132, 204, 22, 0.2); color: var(--accent-lime);">Abrir</a>
                         </div>
 
                         <!-- Licencias -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-key" style="color: var(--accent-sky);"></i></span>
                             <span class="status-label">Licencias</span>
-                            <span class="status-badge status-sky">Activo</span>
+                            <a href="#" target="_blank" class="status-link" style="background-color: rgba(14, 165, 233, 0.2); color: var(--accent-sky);">Abrir</a>
                         </div>
 
                         <!-- Instant On - Monitoreo -->
                         <div class="status-item">
                             <span class="status-icon"><i class="fa-solid fa-wifi" style="color: var(--accent-cyan);"></i></span>
                             <span class="status-label">Instant On - Monitoreo</span>
-                            <span class="status-badge status-cyan">Conectado</span>
+                            <a href="https://portal.instant-on.hpe.com/login" target="_blank" class="status-link" style="background-color: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);">Abrir</a>
                         </div>
                     </div>
 
