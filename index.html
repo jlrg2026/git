@@ -406,7 +406,8 @@
                         <li><a href="https://docs.google.com/spreadsheets/d/15K6thzDSZ8GRt6hZdEPacI_OGd1Q-FqVS4NsTeNRtM0/edit?gid=0#gid=0" target="_blank"><i class="fa-brands fa-google"></i> CONTROL ISSUES-CRM Harmony</a></li>
                         <li><a href="http://soporte.dexterity.com.mx/open.php" target="_blank"><i class="fa-solid fa-ticket"></i> TICKETS SAP-Dexterity</a></li>
                         <li><a href="https://dermavanlab.com/login/index.php" target="_blank"><i class="fa-solid fa-book"></i> DERMAVANLAB.COM</a></li>
-                        <li><a href="#" target="_blank"><i class="fa-solid fa-globe"></i> Gestor de Dominios</a></li>
+                        <!-- CAMBIO REALIZADO AQUÍ -->
+                        <li><a href="#" onclick="descargarRDP(); return false;"><i class="fa-solid fa-desktop"></i> ESCRITORIO REMOTO SAP</a></li>
                         <li><a href="http://192.168.1.80/" target="_blank"><i class="fa-solid fa-key"></i> Impresora Kyocera</a></li>
                         <li><a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><i class="fa-brands fa-google"></i>Google Drive</a></li>
                         <li><a href="https://portal.instant-on.hpe.com/login" target="_blank"><i class="fa-solid fa-wifi"></i> Instant On - Monitoreo</a></li>
@@ -533,6 +534,22 @@
         setInterval(function() {
             document.getElementById('fechaActualizacion').textContent = obtenerFechaActual();
         }, 60000);
+
+        // Función para generar y descargar el archivo de Escritorio Remoto (.rdp)
+        function descargarRDP() {
+            const contenidoRDP = `full address:s:101.44.189.146:3305
+username:s:SAPB1\\DemavanSistemas
+`;
+            const blob = new Blob([contenidoRDP], { type: 'application/x-rdp' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Conexion_SAP.rdp'; 
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
     </script>
 
 </body>
